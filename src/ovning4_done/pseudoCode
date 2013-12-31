@@ -1,0 +1,67 @@
+PSEUDO CODE:
+
+ADDITION:
+performAddition ( String tal1, String tal2)
+
+ lenght = tal2's lenght
+
+ if tal1 is larger than tal2
+ 	lenght = tal1's lenght
+ 
+ match lenght of tal1 & tal2 lenght
+ 
+ carry = 0
+ StringBuilder stringBuilder 
+ 
+ 	while i <= lenght or carry == 1
+ 		
+ 		if i < lenght
+ 			int temp
+ 			=
+ 			char at i in tal1
+ 			+
+ 			char at i in tal2
+ 			+ carry
+ 		else
+ 			temp = carry
+ 			
+ 		carry = 0
+ 		
+ 		if temp is larger than 9
+ 			carry = 1
+ 			sBuilder add char temp % 10 at index i	
+ 		else
+ 			sBuilder add char temp at index i
+ 			
+ 		i++
+ return sBuilder to string
+
+SUBTRACTION:
+performSubtraction ( String tal1, String tal2 )
+
+	lenght = tal2's lenght
+	
+	while i < lenght or carry = 1
+		int temp
+		
+		if i < lenght
+			temp
+			=
+			char at i in tal1
+			- 
+			char at i in tal2
+			- carry
+		
+		carry = 0
+			
+		if temp < 0
+			stringBuilder append temp % 10
+			carry = 1
+			
+		stringBuilder append temp
+		
+		i++
+	if sBuilder char at sBuilders lenght is 0
+	 sBuilder delete char at sBuilder lenght
+	 
+	 return new String sBuilder to string - reverse

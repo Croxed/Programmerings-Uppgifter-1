@@ -1,0 +1,19 @@
+EXTRA UPPGIFT #3:
+
+FRÅGOR:
+1. Komplettera definitionsklassen Chessboard och alla klasser inuti den. Skapa undantagsklassen NotValidFieldException. Beskriv klasserna och deras medlemmar.
+2. Varför skapas klassen Field som en nästlad klass? Kan den skapas utanför klassen Chessboard? Varför skapas de klasser som representerar pjäserna som inre klasser? Kan de skapas utanför klassen Chessboard?
+3. Skapa ett enkelt testprogram där ett objekt av klassen Chessboard och flera objekt av de klasser som representerar pjäserna skapas och används.
+
+4. Skapa och prova programmet ReachableFieldsOnChessboard.
+5. Pjäserna kan lagras i en gemensam vektor, trots att de är av olika typer. Varför är det möjligt?
+6. Trots skillnader i deras beteenden, kan pjäserna presentera sig på ett gemensamt sätt – i en loop. Varför är det möjligt? Finns det något alternativ till detta?
+
+SVAR:
+1. TODO.
+2. Den skapas som en nästlad klass för att endast klassen Chessboard ska kunna nå den. Nej. De kan skapas utanför klassen Chessboard, om man kan nå den abstrakta klass Chesspiece, vilket man inte kan just nu.
+3. Avklarat.
+
+4. TODO.
+5. De ärver av samma klass, nämligen Chesspiece.
+6. De ärver av samma klass, nämligen Chesspiece vilket ger dem tillgång till "gemensamma" metoder som gör att de beteer sig på samma sätt.

@@ -1,0 +1,44 @@
+PROBLEM:
+Find the path and stations which results
+in the shortest distance travllet.
+ 
+FÖRVILLKOR:
+
+There is four zones; Z1, Z2, Z3, Z4.
+
+The number of stations in the zone are;
+1, (1 < i < m), (1 < j < m), 1.
+
+Distance from X to Z1: ai (1 ≤ i ≤ m) - in a array
+Distance from Z1 to Z2: bij (1 ≤ i ≤ m, 1 ≤ j ≤ n) - in a array
+Distance from Z2 to Z3: cj (1 ≤ j ≤ n) - in a array
+
+The paths between Z2 and Z3 go from every 
+station in Z2 to every station in Z3.
+
+The paths between X to Z1 go from every
+station in Z1 to X but not vice versa.
+
+The paths between Y to Z3 go from every
+station in Z3 to Y but not vice versa.
+
+EFTERVILLKOR :
+
+Return the stations to go through
+& the distance of the shortest path.
+
+ALGORITHM - BESKRIVNING:
+
+1. Add the distances from X to station n to
+	the path between station n to (n, m).
+
+2. Add the distances from Y to station m to
+	the path between station m to (n, m)
+ 
+3. Repeat for all stations (n * m)
+ 
+4. Use a sort algoritm to find the shortest distance
+	I am using utbytessortering in TheShortestPath.java	
+	
+ALGORITMEN – PSEUDOKOD:
+ See the pseudoCode.txt file in the same package.

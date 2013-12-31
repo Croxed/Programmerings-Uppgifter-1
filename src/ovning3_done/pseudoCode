@@ -1,0 +1,30 @@
+PSEUDO CODE:
+
+CALCULATING:
+
+// DISTANCE ARRAYS
+integerArray totalDistanceArray[m * n]
+integerArray pathXtoZoneOne[n];
+integerArray pathYtoZoneThree[m];
+
+// CALL METHOD
+calculate()
+
+// START OF METHOD
+Method Calculate(integerArrays totalDistanceArray,
+	pathXtoZoneOne, pathYtoZoneThree)
+
+integer shortest = ZoneTwotoZoneThree[0][0]
+integer stationOneIndex = 0
+integer stationTwoIndex = 0
+
+for every i station n
+	for every i2 station m
+		ZoneTwotoZoneThree[i] += pathXtZoneOne[i] + pathYtoZoneThree
+		
+		if ZoneTwotoZoneThree[i][i2] <= shortest
+			shortest = ZoneTwotoZoneThree[i][i2]
+			stationOneIndex = i
+			stationTwoIndex = i2
+			
+// END OF METHOD

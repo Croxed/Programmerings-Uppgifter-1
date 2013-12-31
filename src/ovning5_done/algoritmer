@@ -1,0 +1,32 @@
+laggTillFramför - algoritm
+
+PROBLEM
+Lägga till ett objekt av typen Punkt till
+en vektor.
+
+
+FÖRVILLKOR
+Algoritmen förutsätter att den får tillgång
+till ett Punkt objekt som skall sättas in
+i en Polylinje & ett namn på det objekt som 
+Punkten horn skall sättas in framför.
+
+
+ALGORITM
+
+	1. Gå igenom alla Punkter i gamla vektorn
+	2. Ifall Punkt i är lika med den punkt vi ska
+	sätta in en annan Punkt framför.
+	Sätt in den Punkt vi vill ha in och öka i.
+	3. Kopiera över gammal vektorns värde vid index i2
+	och sätt detta som nya vektorns i värde.
+	4. Sätt nya vektorn som objektets privata vektor
+
+EFTERVILLKOR
+	
+	Skapar en array med Punkten X innan Punkt med namn
+	Y och sätter denna som objekts privata Punkt vektor.
+	
+	
+
+

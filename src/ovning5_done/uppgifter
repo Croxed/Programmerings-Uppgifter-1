@@ -1,0 +1,30 @@
+Uppgifter
+
+B)
+	5.
+	Denna strategi är _inte_ minneseffektiv om det finns
+	ett sätt att kringgå kravet att skapa en ny vektor när
+	man sätter in en Punkt till objektet Polylinjes privata
+	vektor.
+	
+	För det man gör är att skapar en ny vektor med en mer
+	plats än föregående vektor. Sedan kopierar man över de
+	gamla värdena till den nya vektor och sätter denna nya
+	vektor som objektets privata vektor.
+	
+	I och med detta är funktionens inte heller tideffektiv
+	då den växer exponentiellt med antalet Punkter i objektet
+	Polylinjes privata vektor.
+	
+D)
+	Testprogrammet skriver ut den punkt som iteratorn befinner
+	sig på om det är så att iterator står på en punkt (via funk-
+	tionen finnsHorn()).
+	
+	Sedan returneras just det hörnet som iterator står på som
+	sedan hämtar sin stringRepresentation och skriver då ut 
+	detta.
+	
+	Därefter kallas gaFram() i iterator varvid iteratorn tar ett
+	steg framåt i Punkt vektorn den fått av Polylinjen som passades
+	in vid konstruktion.

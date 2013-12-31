@@ -1,0 +1,22 @@
+PROBLEM (SUBTRACTION)
+Calculate subtraction on the integers as
+strings and return the result.
+
+Algoritm:
+ 1. Look at the first char at both strings.
+ 2. Interpret the chars as integers
+ 3. Repeat the same process for the next char for
+ the lenght of the longest of the two strings.
+ 
+FÖRVILLKOR 
+Input two integers as strings.
+
+EFTERVILLKOR 
+Output one integer as a string.
+
+ALGORITHM - BESKRIVNING
+The algorithm takes two integers as strings
+and then returns one integer as a string.
+
+ALGORITHM - PSEUDOKOD
+See the pseudoCode.txt file in the same package.

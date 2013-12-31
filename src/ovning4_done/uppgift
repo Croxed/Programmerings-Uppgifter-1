@@ -1,0 +1,10 @@
+Uppgifter i samband med problemet och lösningen
+
+1. Skapa en algoritm som adderar två naturliga heltal, givna som teckensträngar. 
+Åskådliggör algoritmen och beskriv den med motsvarande pseudokod. Implementera algoritmen i form av en Javametod.
+
+2. Skapa en algoritm som subtraherar två naturliga heltal, givna som teckensträngar. 
+Åskådliggör algoritmen och beskriv den med motsvarande pseudokod. Implementera algoritmen i form av en Javametod.
+
+3. Komplettera det givna programmet så att det blir en meningsfull enhet. 
+Utskrift av erhållna resultat kan organiseras som en särskild metod.

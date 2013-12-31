@@ -1,0 +1,43 @@
+UPPGIFTER:
+
+1. Skapa en klass VPolylinje som representerar en polylinje i planet, och som implementerar gränssnittet Polylinje. 
+Förutom de metoder som specificeras i gränssnittet, ska även metoden toString (som returnerar polylinjens strängrepresentation) implementeras.
+ Polylinjens hörn ska lagras i en vektor av den inbyggda typen.
+ 
+2. Skapa en klass NPolylinje som representerar en polylinje i planet, och som implementerar gränssnittet Polylinje.
+Förutom de metoder som specificeras i gränssnittet, ska även metoden toString (som returnerar polylinjens strängrepresentation) implementeras.
+Polylinjens hörn ska lagras i en sekvens av länkade noder.
+
+3. Skapa ett gemensamt testprogram för klasserna VPolylinje och NPolylinje. 
+En referens av gränssnittet Polylinje ska användas för att referera till objekt av de implementerade klasserna, och för att aktivera de olika metoderna.
+ Man kan göra enligt följande mönster:
+ 
+Polylinje polylinje = null;
+
+polylinje = new VPolylinje (); // polylinje = new NPolylinje ();
+
+Beroende på den klass som ska testas, bortkommenteras antingen den andra eller den tredje satsen.
+
+4. På vilket sätt skiljer sig en iteration genom en polylinje och en iteration genom en lista av typen
+java.util.LinkedList? 
+Prova att iterera polylinjen så här:
+
+for (Punkt h : polylinje)
+System.out.println (h);
+
+5. Skapa en statisk metod (i en särskild klass som heter PolylinjeTest) som tar emot en vektor med ett antal polylinjer av typen Polylinje, och returnerar den kortaste av de polylinjer i vektorn som är gula. 
+Använd denna metod tre gånger: i samband med en vektor med polylinjer av typen VPolylinje, i samband med en vektor med polylinjer av typen NPolylinje och i samband med en vektor som innehåller polylinjer av båda typerna.
+ Hur kan en vektor innehålla objekt av olika typer? Hur kan en och samma metod ta emot objekt av olika typer?
+ 
+ 
+ SVAR:
+ 
+ 4. Om man itererar igenom VPolylinje går man igenom en vektor bestående av X antal Punkt objekt. Om man ska iterera igenom en LinkedList så funkar samma metod som med vektorer eftersom de båda implementerar Iterable<T>.
+ I varje nod i en LinkedList återfinner man ett värde och sedan en referens till nästa nods värden, osv. Den sista har referensen null och visar därför slutet av en LinkedList. Vektorer ser inte ut på detta viss. 
+ Ett intressant fenomen i LinkedList är att en nods referens till nästa nod kan peka på en nod i listan vilket bildar loopar i listan. Därför är det inte helt säkert att man genom att iterera igenom den länkade listans 
+ iterator kommer att komma till "slutet" av listan, dvs den sista noden med "null" som referens. Dock kan man iterera igenom en linkedlist med en enkel for-loop ( for(Punkt p : lista) ).
+ 
+ 5. Eftersom både NPolylinje & VPolylinje implementerar gränssnittet Polylinje så innehåller de samma funktionalitet vilket innebär att dessa "delade / ärvda" funktioner kan garanteras i båda fallen och därmed går de
+  att kalla och använda oavsett om objektet i frågan är av typen NPolylinjer eller VPolylinje. 
+  
+  "Samma sak" fungerar när man använder arv hos klasser, till exempel kan en metod ta in en Organism som objekt men även Människa & Gris om både Gris & Människa ärver från Organism.
