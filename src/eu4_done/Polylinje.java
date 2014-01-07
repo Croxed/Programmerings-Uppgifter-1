@@ -1,4 +1,4 @@
-package eu4;
+package eu4_done;
 
 import ovning5_done.Punkt;
 

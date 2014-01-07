@@ -1,4 +1,4 @@
-package eu4;
+package eu4_done;
 
 import java.util.Iterator;
 import java.util.Random;
@@ -104,7 +104,7 @@ public class VPolylinje implements Polylinje {
 	@Override
 	public Iterator<Punkt> iterator() {
 		// TODO Auto-generated method stub
-		return this.punktVektor.iterator();
+		return this.iterator();
 	}
 
 	@Override

@@ -1,4 +1,4 @@
-package eu4;
+package eu4_done;
 
 import java.util.Random;
 
@@ -8,6 +8,7 @@ public class PolylinjeTest {
 
 	public static void main(String args[])
 	{
+		@SuppressWarnings("unused")
 		PolylinjeTest test = new PolylinjeTest();
 	}
 
@@ -29,7 +30,7 @@ public class PolylinjeTest {
 		}
 	}
 
-	/*
+	/**
 	 * Skriver ut vPolylinjens alla punkter
 	 */
 	public void VektorPolylinje(Polylinje vPolylinje)
@@ -42,7 +43,7 @@ public class PolylinjeTest {
 		}
 	}
 
-	/*
+	/**
 	 * Skriver ut nPolylinjens alla punkter
 	 */
 	public void LinkedListPolylinje(Polylinje nPolylinje)
@@ -54,7 +55,7 @@ public class PolylinjeTest {
 		}
 	}
 
-	/*
+	/**
 	 * Returnerar den kortaste av dem gula Polylinje:rna
 	 * @return Polylinje
 	 */
@@ -102,9 +103,9 @@ public class PolylinjeTest {
 		return kortaste;
 	}
 
-	/*
+	/**
 	 * Genererar en slumpmässig lista med NPolylinjer 
-	 * @return Returnerar en lista
+	 * @return En lista
 	 */
 	public NPolylinje[] generateNPolylinjer()
 	{
@@ -119,9 +120,9 @@ public class PolylinjeTest {
 		return vektor;
 	}
 
-	/*
+	/**
 	 * Genererar en slumpmässig lista med VPolylinjer
-	 * @return Returnerar en lista med VPolylinjer
+	 * @return En lista med VPolylinjer
 	 */
 	public VPolylinje[] generateVPolylinjer()
 	{
@@ -136,9 +137,9 @@ public class PolylinjeTest {
 		return vektor;
 	}
 
-	/*
+	/**
 	 * Genererar en slumpmässig lista med både VPolylinjer & NPolylinjer
-	 * @return Returnerar en lista med både VPolylinjer & NPolylinjer
+	 * @return En lista med både VPolylinjer & NPolylinjer
 	 */
 	public Polylinje[] generatePolylinjer()
 	{

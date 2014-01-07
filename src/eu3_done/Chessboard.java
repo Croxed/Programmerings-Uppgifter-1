@@ -28,7 +28,6 @@ public class Chessboard
 			// Ta bort schackpjässen
 			this.piece = null;
 			return null;
-
 		}
 
 		public void mark()

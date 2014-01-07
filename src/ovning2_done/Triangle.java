@@ -37,10 +37,10 @@ public class Triangle
 	{
 		double[] doubleArray = new double[]{side1, side2, side3};
 		Arrays.sort(doubleArray);
-		if(doubleArray[0] + doubleArray[1] < doubleArray[2]) 
+		if(doubleArray[0] + doubleArray[1] > doubleArray[2]) 
 		{
-			return false;
+			return true;
 		}
-		return true;
+		return false;
 	}
 } // END OF CLASS
